@@ -1,0 +1,97 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Shared Box and Flex Layout Styles */
+#nav, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #535bf2;
+    height: 4rem;
+}
+
+body, #App, #blogs-container {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+#App {
+    min-height: 100vh;
+    width: 100%;
+}
+
+#blogs-container {
+    gap: 1rem;
+    flex: 1;
+    margin: 4rem auto;
+}
+
+/* Navigation List */
+.nav-list {
+    display: flex;
+    gap: 3rem;
+    list-style-type: none;
+    font-size: 1.4rem;
+}
+
+/* Links */
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: #535bf2;
+}
+
+/* Blog Posts */
+.blog-post {
+    max-width: 800px;
+    min-width: 500px;
+    background-color: #535bf2;
+    border: 1px solid black;
+}
+
+/* Light Mode Styles */
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+
+    a:hover {
+        color: #747bff;
+    }
+
+    button {
+        background-color: #f9f9f9;
+    }
+}
