@@ -9,7 +9,7 @@ function App() {
         <div id='App'>
             <Nav />
             <Blogs />
-            <Footer/>
+            <Footer />
         </div>
     );
 }
